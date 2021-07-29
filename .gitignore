@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 # Don't upload Token
 token.json
+credentials.json
