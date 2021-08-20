@@ -112,7 +112,13 @@ def main(args):
     if not events:
         print('No upcoming events found.')
     for event in events:
-            print( f"Date \n{event['updated']}\nDescription \n{event['description']}\n")
+        try:
+            start = event['start'].get('dateTime', event['start'].get('date'))
+            # print(f"Start {start}\n")
+            print( f"Date \n{start}\n Description \n{event['description']}\n")
+        except KeyError as e:
+            pass
+            # print (f"No Description for Event {event['updated']} and error {e}")
     
 
 if __name__ == '__main__':

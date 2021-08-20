@@ -130,3 +130,5 @@ dmypy.json
 # Don't upload Token
 token.json
 credentials.json
+# No personal files
+claudette*
