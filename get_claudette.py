@@ -125,11 +125,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process some Dates.')
     parser.add_argument("-s", 
                     "--startdate", 
+                    "-s",
                     help="The Start Date - format YYYY-MM-DD", 
                     required=True, 
                     type=datetime.date.fromisoformat)
     parser.add_argument("-e", 
                     "--enddate", 
+                    "-e",
                     help="The Start Date - format YYYY-MM-DD", 
                     required=True, 
                     type=datetime.date.fromisoformat)

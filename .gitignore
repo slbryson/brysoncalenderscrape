@@ -132,3 +132,4 @@ token.json
 credentials.json
 # No personal files
 claudette*
+.DS_Store
